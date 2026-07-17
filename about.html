@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Tom Wisniewski — RosePaul Ventures</title>
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="description" content="Tom Wisniewski is a seed-stage angel investor and Partner at RosePaul Ventures. Three decades building and advising companies — Mitchell Madison Group, Walker Digital, VC/PE turnaround advisory — before co-founding Newark Venture Partners and investing full-time. Board director at New York Angels; MBA, Tuck at Dartmouth.">
+<meta property="og:title" content="About Tom Wisniewski — RosePaul Ventures">
+<meta property="og:description" content="Tom Wisniewski is a seed-stage angel investor and Partner at RosePaul Ventures. Three decades building and advising companies — Mitchell Madison Group, Walker Digital, VC/PE turnaround advisory — before co-founding Newark Venture Partners and investing full-time. Board director at New York Angels; MBA, Tuck at Dartmouth.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="assets/tom-wisniewski.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="assets/rose-navy.png">
+
+<script>
+const STATIC = new URLSearchParams(location.search).has('static') || matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(!STATIC){document.documentElement.classList.add('motion');}
+</script>
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --paper:#FBFAF7;
+  --ink:#16202B;
+  --accent:#0A4B70;
+  --hairline:#E4E0D8;
+  --muted:#5C6672;
+
+  --serif:Georgia,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,sans-serif;
+
+  --h1:clamp(2.4rem,5vw,4rem);
+  --h2:clamp(1.5rem,2.6vw,2.05rem);
+  --h3:clamp(1.1rem,1.6vw,1.25rem);
+  --p:1.05rem;
+  --small:.875rem;
+  --eyebrow:.75rem;
+
+  --lh-tight:1.12;
+  --lh-head:1.22;
+  --lh-body:1.68;
+
+  --gutter:clamp(20px,7vw,120px);
+  --sec-pad:clamp(64px,9vw,120px);
+  --measure:720px;
+  --wide:1120px;
+}
+
+/* ============ RESET / BASE ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:auto;}
+html.motion{scroll-behavior:smooth;}
+html,body{overflow-x:clip;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:var(--p);
+  line-height:var(--lh-body);
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:64px; /* lane reserved for the fixed disclaimer strip */
+}
+@media (max-width:640px){
+  body{padding-bottom:96px;} /* disclaimer wraps to 2–3 lines on small screens */
+}
+img{max-width:100%;display:block;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;text-underline-offset:3px;}
+h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--ink);}
+h1{font-size:var(--h1);line-height:var(--lh-tight);letter-spacing:-.01em;}
+h2{font-size:var(--h2);line-height:var(--lh-head);}
+h3{font-size:var(--h3);line-height:var(--lh-head);}
+section{scroll-margin-top:88px;}
+
+.eyebrow{
+  font-family:var(--sans);
+  font-size:var(--eyebrow);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+  display:block;
+}
+
+.wrap{padding-left:var(--gutter);padding-right:var(--gutter);}
+.sec{padding-top:var(--sec-pad);padding-bottom:var(--sec-pad);border-top:1px solid var(--hairline);}
+.measure{max-width:var(--measure);}
+.wideband{max-width:var(--wide);}
+
+/* ============ CHROME ============ */
+.disclaimer{
+  position:fixed;bottom:0;left:0;right:0;z-index:998;
+  background:var(--paper);
+  border-top:1px solid var(--hairline);
+  font-size:.72rem;color:var(--muted);
+  padding:8px var(--gutter);
+  line-height:1.5;
+  text-align:center;
+  font-family:var(--sans);
+}
+.disclaimer a{color:var(--accent);}
+
+/* ============ NAV ============ */
+header.site{
+  position:sticky;top:0;z-index:900;
+  background:var(--paper);
+  border-bottom:1px solid var(--hairline);
+}
+.nav-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px 28px;flex-wrap:wrap;
+  padding-top:16px;padding-bottom:16px;
+}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);}
+.brand:hover{text-decoration:none;}
+.brand img{width:31px;height:22px;}
+.brand .wordmark{font-family:var(--serif);font-size:1.15rem;letter-spacing:.01em;white-space:nowrap;}
+nav.primary ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 22px;}
+nav.primary a{color:var(--ink);font-size:var(--small);letter-spacing:.02em;}
+nav.primary a:hover{color:var(--accent);}
+nav.primary a[aria-current="page"]{color:var(--accent);border-bottom:1px solid var(--accent);}
+@media (max-width:640px){
+  nav.primary{width:100%;}
+  nav.primary ul{gap:4px 16px;}
+}
+
+/* ============ HERO ============ */
+.hero{padding-top:clamp(48px,7vw,96px);padding-bottom:var(--sec-pad);border-top:none;}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,380px);
+  gap:clamp(32px,5vw,72px);align-items:center;max-width:var(--wide);
+}
+.hero-copy .eyebrow{margin-bottom:20px;}
+.hero-copy h1{margin-bottom:24px;max-width:16ch;}
+.hero-sub{color:var(--muted);max-width:52ch;margin-bottom:26px;}
+.portrait{position:relative;}
+.portrait img{
+  width:100%;height:auto;aspect-ratio:1/1;
+  border:1px solid var(--hairline);
+  padding:10px;background:#fff;
+  object-fit:cover;object-position:center top;
+}
+.portrait a{display:block;}
+.portrait a::after{
+  content:"LinkedIn \2197";
+  position:absolute;left:10px;bottom:10px;right:10px;
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:#fff;background:rgba(10,75,112,.92);
+  padding:7px 10px;text-align:center;
+  opacity:0;transition:opacity .25s ease;
+}
+.portrait a:hover::after{opacity:1;}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;}
+.chip{
+  font-size:var(--small);color:var(--ink);
+  border:1px solid var(--hairline);
+  padding:5px 12px;background:#fff;
+  white-space:nowrap;
+}
+.cta{
+  display:inline-block;font-size:var(--small);letter-spacing:.04em;
+  color:var(--accent);border-bottom:1px solid var(--accent);
+  padding-bottom:2px;
+}
+.cta:hover{text-decoration:none;}
+
+/* the ONE enacting word: "compound" — navy underline, finished by default */
+.compound{position:relative;white-space:nowrap;}
+.compound::after{
+  content:"";position:absolute;left:0;right:0;bottom:.04em;height:3px;
+  background:var(--accent);
+  transform:scaleX(1);transform-origin:left;
+}
+html.motion .compound::after{
+  animation:drawline 1s cubic-bezier(.22,.61,.36,1) .5s both;
+}
+@keyframes drawline{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr;}
+  .portrait{order:-1;max-width:300px;}
+}
+
+/* ============ THE MULTIPLE ============ */
+.multiple h2{margin-bottom:10px;}
+.multiple .lede{color:var(--muted);max-width:52ch;margin-bottom:clamp(40px,6vw,72px);}
+.chart{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:clamp(14px,3vw,44px);
+  align-items:end;
+  max-width:var(--wide);
+}
+.exit{display:flex;flex-direction:column;justify-content:flex-end;min-width:0;}
+.exit .figures{margin-bottom:10px;}
+.exit .mult{
+  font-family:var(--serif);
+  font-size:clamp(1.5rem,3.4vw,2.6rem);
+  line-height:1.05;color:var(--ink);
+}
+.exit .became{font-size:var(--small);color:var(--muted);margin-top:2px;white-space:nowrap;}
+.barwrap{height:clamp(240px,38vh,400px);display:flex;align-items:flex-end;}
+.bar{
+  width:100%;
+  background:var(--accent);
+  min-height:6px;
+}
+html.motion .bar{
+  transform:scaleY(.2);transform-origin:bottom;opacity:.55;
+  transition:transform 1.1s cubic-bezier(.22,.61,.36,1),opacity .7s ease;
+}
+html.motion .chart.in .bar{transform:scaleY(1);opacity:1;}
+html.motion .exit:nth-child(2) .bar{transition-delay:.1s;}
+html.motion .exit:nth-child(3) .bar{transition-delay:.2s;}
+html.motion .exit:nth-child(4) .bar{transition-delay:.3s;}
+.exit .meta{border-top:1px solid var(--ink);padding-top:10px;margin-top:0;}
+.exit .name{font-family:var(--serif);font-size:var(--h3);line-height:1.3;}
+.exit .name a{color:var(--ink);}
+.exit .name a:hover{color:var(--accent);}
+.exit .acq{font-size:var(--small);color:var(--muted);margin-top:2px;}
+.ai-line{
+  font-size:var(--small);color:var(--muted);
+  max-width:var(--measure);margin-top:clamp(32px,5vw,56px);
+  border-top:1px solid var(--hairline);padding-top:14px;
+}
+@media (max-width:560px){
+  .chart{gap:12px 14px;}
+  .barwrap{height:200px;}
+  .exit .became{white-space:normal;}
+  .exit .meta{overflow-wrap:break-word;}
+}
+@media (max-width:480px){
+  /* two shared baselines instead of one, so names stay whole and nothing overflows */
+  .chart{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px;}
+  .barwrap{height:170px;}
+}
+
+/* ============ SECTION MARKER ============ */
+.rosemark{width:31px;height:22px;margin-bottom:18px;}
+
+/* ============ ABOUT ============ */
+.about p{margin-bottom:1.35em;}
+.about p:last-child{margin-bottom:0;}
+.edu{color:var(--muted);font-size:var(--small);border-top:1px solid var(--hairline);padding-top:16px;margin-top:34px;}
+
+/* ============ THESIS ============ */
+.thesis dl{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:clamp(20px,3vw,40px);max-width:var(--wide);
+  margin-top:clamp(32px,4vw,48px);
+}
+.thesis .fact{border-top:2px solid var(--ink);padding-top:14px;}
+.thesis dt{
+  font-size:var(--eyebrow);letter-spacing:.18em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:8px;font-weight:400;
+}
+.thesis dd{font-family:var(--serif);font-size:var(--h3);line-height:1.45;}
+@media (max-width:820px){.thesis dl{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:420px){.thesis dl{grid-template-columns:1fr;}}
+
+/* ============ PORTFOLIO ============ */
+.portfolio .grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:14px;max-width:var(--wide);margin-top:clamp(32px,4vw,48px);
+}
+.card{
+  border:1px solid var(--hairline);background:#fff;
+  padding:18px 18px 16px;
+  display:flex;flex-direction:column;gap:6px;min-height:118px;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+  color:var(--ink);text-decoration:none;
+}
+a.card:hover,.card:hover{
+  transform:translateY(-3px);
+  border-color:var(--accent);
+  box-shadow:0 6px 18px rgba(22,32,43,.06);
+  text-decoration:none;
+}
+.card .co{font-family:var(--serif);font-size:1.12rem;line-height:1.3;}
+a.card .co{display:inline-flex;align-items:center;gap:6px;}
+a.card .co::after{content:"\2197";font-family:var(--sans);font-size:.7em;color:var(--muted);}
+a.card:hover .co::after{color:var(--accent);}
+.card .line{font-size:var(--small);color:var(--muted);flex:1;}
+.card .status{
+  font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin-top:4px;
+}
+.card .status.exit{color:var(--accent);}
+.card .status a{color:var(--accent);}
+
+/* ============ FUNDS ============ */
+.funds .wall{
+  display:flex;flex-wrap:wrap;gap:10px 12px;
+  max-width:var(--wide);margin-top:clamp(28px,4vw,40px);
+  list-style:none;
+}
+.funds .wall li{padding:0;}
+.funds .wall a{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--serif);font-size:var(--h3);color:var(--ink);
+  border:1px solid var(--hairline);background:#fff;
+  padding:10px 18px;transition:border-color .2s ease,color .2s ease;
+}
+.funds .wall a::after{content:"\2197";font-family:var(--sans);font-size:.62em;color:var(--muted);}
+.funds .wall a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.funds .wall a:hover::after{color:var(--accent);}
+
+/* ============ TEACHING ============ */
+.teaching p{max-width:var(--measure);}
+
+/* ============ FOOTER ============ */
+footer.site{border-top:1px solid var(--hairline);padding-top:var(--sec-pad);padding-bottom:clamp(48px,6vw,80px);}
+.socials{list-style:none;display:flex;flex-wrap:wrap;gap:8px 26px;margin:22px 0 40px;}
+.socials a{font-size:var(--small);}
+.foot-line{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:var(--small);}
+.foot-line img{width:24px;height:17px;}
+
+/* ============ REVEALS (motion only — static renders finished) ============ */
+html.motion .reveal{opacity:0;transform:translateY(16px);transition:opacity .75s ease,transform .75s cubic-bezier(.22,.61,.36,1);}
+html.motion .reveal.in{opacity:1;transform:none;}
+
+/* ============ varv popup ============ */
+#varv-popup{
+  position:fixed;right:20px;bottom:76px;z-index:2147483000;
+  width:340px;max-width:calc(100vw - 32px);box-sizing:border-box;
+  opacity:0;visibility:hidden;pointer-events:none;transform:translateY(14px);
+  color:#14151a;background:rgba(252,252,251,.96);
+  -webkit-backdrop-filter:saturate(1.1) blur(8px);backdrop-filter:saturate(1.1) blur(8px);
+  border:1px solid rgba(20,21,26,.14);border-radius:16px;
+  box-shadow:0 18px 50px -12px rgba(15,16,20,.34),0 2px 8px -2px rgba(15,16,20,.18);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow:hidden;
+}
+#varv-popup.is-open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);
+  transition:opacity .5s ease,transform .5s cubic-bezier(.22,.61,.36,1);}
+#varv-popup.varv-static,#varv-popup.varv-static.is-open{transition:none !important;}
+@media (prefers-reduced-motion:reduce){#varv-popup,#varv-popup.is-open{transition:none !important;}}
+#varv-popup .vp-inner{padding:14px 14px 16px;}
+#varv-popup .vp-media{position:relative;margin:0 0 12px;border-radius:11px;overflow:hidden;background:rgba(20,21,26,.06);aspect-ratio:16/10;}
+#varv-popup .vp-media video{display:block;width:100%;height:100%;object-fit:cover;cursor:pointer;background:#0c0d10;}
+#varv-popup .vp-unmute{position:absolute;left:8px;bottom:8px;display:inline-flex;align-items:center;gap:5px;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:600;color:#fff;background:rgba(12,13,16,.62);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);cursor:pointer;user-select:none;border:0;}
+#varv-popup .vp-unmute[hidden]{display:none;}
+#varv-popup .vp-tag{margin:0 2px 12px;font-size:14px;line-height:1.4;font-weight:560;letter-spacing:-.005em;color:inherit;}
+#varv-popup .vp-ai{display:grid;gap:7px;margin:0 0 11px;}
+#varv-popup .vp-ai a{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;text-align:center;padding:10px 12px;border-radius:10px;font-size:13px;font-weight:600;letter-spacing:-.005em;color:inherit;background:rgba(20,21,26,.035);border:1px solid rgba(20,21,26,.16);transition:background .15s ease,border-color .15s ease,transform .05s ease;}
+#varv-popup .vp-ai a:hover{background:rgba(20,21,26,.075);border-color:rgba(20,21,26,.3);}
+#varv-popup .vp-ai a:active{transform:translateY(.5px);}
+#varv-popup.varv-static .vp-ai a{transition:none;}
+#varv-popup .vp-ai .vp-dot{width:7px;height:7px;border-radius:50%;flex:none;}
+#varv-popup .vp-book{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;text-align:center;padding:12px 14px;border-radius:11px;font-size:14px;font-weight:700;letter-spacing:-.01em;color:#fcfcfb;background:#14151a;border:1px solid #14151a;transition:opacity .15s ease,transform .05s ease;}
+#varv-popup .vp-book:hover{opacity:.9;}
+#varv-popup .vp-book:active{transform:translateY(.5px);}
+#varv-popup.varv-static .vp-book{transition:none;}
+#varv-popup .vp-close{position:absolute;top:8px;right:8px;z-index:2;width:28px;height:28px;padding:0;display:flex;align-items:center;justify-content:center;border-radius:50%;cursor:pointer;color:#fff;background:rgba(12,13,16,.5);border:0;font-size:15px;line-height:1;}
+#varv-popup .vp-close:hover{background:rgba(12,13,16,.72);}
+#varv-popup a:focus-visible,#varv-popup button:focus-visible,#varv-popup video:focus-visible{outline:2px solid #4f7cff;outline-offset:2px;}
+@media (max-width:400px){#varv-popup{right:12px;left:12px;bottom:104px;width:auto;}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="RosePaul Ventures — home">
+      <img src="assets/rose-navy.png" alt="" width="200" height="140">
+      <span class="wordmark">RosePaul Ventures</span>
+    </a>
+    <nav class="primary" aria-label="Primary">
+      <ul>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="index.html#track-record">Track Record</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#funds">Funds</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap" aria-label="About Tom Wisniewski" style="padding-bottom:clamp(48px,7vw,88px)">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">About &middot; New York City</span>
+        <h1>Thirty years of building, advising, and backing software companies.</h1>
+        <p class="hero-sub">Tom Wisniewski is a full-time seed-stage angel investor and Partner at RosePaul Ventures. Before investing became the work, he built and turned around companies for three decades.</p>
+        <a class="cta" href="index.html#track-record">See the track record &#8595;</a>
+      </div>
+      <div class="portrait">
+        <a href="https://www.linkedin.com/in/thomaswis" target="_blank" rel="noopener" aria-label="Tom Wisniewski on LinkedIn">
+          <img src="assets/tom-wisniewski.jpg" alt="Portrait of Tom Wisniewski" width="600" height="600">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap about" aria-label="Career">
+    <div class="measure">
+      <h2 class="reveal">The path to full-time investing.</h2>
+      <div style="height:28px"></div>
+      <p class="reveal">Tom began his career as a programmer in the IT organization at Morgan Stanley, then moved into investment banking. In 1993 he joined <b>Mitchell Madison Group</b>, a management-consulting spinoff of McKinsey &amp; Company. Over the next seven years he helped grow the firm from a startup into an organization of more than 1,000 professionals across 15 offices worldwide, before it was acquired by USWeb/CKS in 2000.</p>
+      <p class="reveal">He then joined <b>Walker Digital</b>, the internet-invention lab founded by Jay Walker (the entrepreneur behind Priceline). From there Tom spent roughly a decade as an advisor to venture-capital and private-equity firms &mdash; evaluating investments and leading portfolio-company turnarounds. Sitting on that side of the table, he saw first-hand why some companies compound and others quietly fail.</p>
+      <p class="reveal">That experience became <b>RosePaul Ventures</b>, the proprietary investment fund for Tom and the RosePaul Investments family office, where he now invests full-time in seed-stage software companies. Along the way he co-founded <a href="https://newarkventurepartners.com" target="_blank" rel="noopener">Newark Venture Partners</a> &mdash; a $50M venture fund and accelerator in downtown Newark &mdash; and served as its Managing Director. He is also a Board Director at <a href="https://www.newyorkangels.com" target="_blank" rel="noopener">New York Angels</a>, one of the most active early-stage angel groups in the country.</p>
+      <p class="edu reveal">BA in Physics &amp; Philosophy, Clark University &nbsp;&middot;&nbsp; MBA, Tuck School of Business at Dartmouth</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" aria-label="Roles">
+    <div class="measure"><h2 class="reveal">Roles today.</h2></div>
+    <dl class="thesis-like" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px);max-width:var(--wide);margin-top:clamp(32px,4vw,48px)">
+      <div class="fact reveal" style="border-top:2px solid var(--ink);padding-top:14px">
+        <dt style="font-size:var(--eyebrow);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">RosePaul Ventures</dt>
+        <dd style="font-family:var(--serif);font-size:var(--h3);line-height:1.45">Partner &mdash; seed-stage software investing</dd>
+      </div>
+      <div class="fact reveal" style="border-top:2px solid var(--ink);padding-top:14px">
+        <dt style="font-size:var(--eyebrow);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Newark Venture Partners</dt>
+        <dd style="font-family:var(--serif);font-size:var(--h3);line-height:1.45">Co-founder &amp; Managing Director</dd>
+      </div>
+      <div class="fact reveal" style="border-top:2px solid var(--ink);padding-top:14px">
+        <dt style="font-size:var(--eyebrow);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">New York Angels</dt>
+        <dd style="font-family:var(--serif);font-size:var(--h3);line-height:1.45">Board Director</dd>
+      </div>
+      <div class="fact reveal" style="border-top:2px solid var(--ink);padding-top:14px">
+        <dt style="font-size:var(--eyebrow);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">General Assembly</dt>
+        <dd style="font-family:var(--serif);font-size:var(--h3);line-height:1.45">Instructor &mdash; fundraising &amp; entrepreneurship</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="sec wrap thesis" aria-label="Investment thesis">
+    <div class="measure">
+      <h2 class="reveal">What RosePaul looks for.</h2>
+      <p class="reveal" style="color:var(--muted);margin-top:14px">RosePaul invests in software-enabled businesses at the seed stage, and also backs other managers as a Limited Partner.</p>
+    </div>
+    <dl>
+      <div class="fact reveal"><dt>Sector</dt><dd>Software-enabled businesses</dd></div>
+      <div class="fact reveal"><dt>Stage</dt><dd>Seed &mdash; product built, some market validation</dd></div>
+      <div class="fact reveal"><dt>Check</dt><dd>$25K&#8211;$250K, follows on opportunistically</dd></div>
+      <div class="fact reveal"><dt>Terms</dt><dd>Pre-money $5M or less; rounds of $500K&#8211;$1.5M</dd></div>
+    </dl>
+    <p class="reveal" style="margin-top:clamp(32px,4vw,48px)"><a class="cta" href="index.html#portfolio">See the full portfolio &#8594;</a></p>
+  </section>
+</main>
+
+<footer class="site wrap" aria-label="Site footer">
+  <div class="measure">
+    <ul class="socials">
+      <li><a href="https://twitter.com/thomaswis" target="_blank" rel="noopener">X / Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/thomaswis" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://angel.co/thomas-wisniewski" target="_blank" rel="noopener">AngelList</a></li>
+      <li><a href="https://www.crunchbase.com/person/thomas-wisniewski" target="_blank" rel="noopener">Crunchbase</a></li>
+      <li><a href="https://www.slideshare.net/Thomaswis" target="_blank" rel="noopener">SlideShare</a></li>
+    </ul>
+    <div class="foot-line">
+      <img src="assets/rose-navy.png" alt="RosePaul rose mark" width="200" height="140">
+      <span>RosePaul Ventures &middot; New York City</span>
+    </div>
+  </div>
+</footer>
+
+<div class="disclaimer">Unsolicited concept redesign by varv — not affiliated with, endorsed by, or authorized by Thomas Wisniewski. See the official site &#8594; <a href="https://rosepaul.com/" target="_blank" rel="noopener">rosepaul.com</a></div>
+
+<!-- ============ varv popup ============ -->
+<div id="varv-popup" role="dialog" aria-label="A note from varv" aria-live="polite">
+  <button type="button" class="vp-close" aria-label="Dismiss">&times;</button>
+  <div class="vp-inner">
+    <div class="vp-media">
+      <video muted playsinline preload="metadata" poster="assets/varv-popup-poster.jpg" aria-label="A short intro from Moksh at varv"></video>
+      <button type="button" class="vp-unmute" aria-label="Unmute video"><span aria-hidden="true">&#128266;</span> Tap for sound</button>
+    </div>
+    <p class="vp-tag">Don&rsquo;t take our word for it &mdash; ask your AI which site wins you business.</p>
+    <div class="vp-ai">
+      <a id="vp-chatgpt" href="#" target="_blank" rel="noopener"><span class="vp-dot" style="background:#10a37f"></span> Ask ChatGPT</a>
+      <a id="vp-claude" href="#" target="_blank" rel="noopener"><span class="vp-dot" style="background:#d97757"></span> Ask Claude</a>
+      <a id="vp-perplexity" href="#" target="_blank" rel="noopener"><span class="vp-dot" style="background:#20b8cd"></span> Ask Perplexity</a>
+    </div>
+    <a class="vp-book" href="https://varv.ai/cal" target="_blank" rel="noopener">Book 15 min &rarr;</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  if(!document.documentElement.classList.contains('motion')) return;
+  if(!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(!entry.isIntersecting) return;
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
+  var targets = document.querySelectorAll('.reveal');
+  for(var i = 0; i < targets.length; i++){ io.observe(targets[i]); }
+})();
+</script>
+
+<!-- varv popup behaviour -->
+<script id="varv-popup-js">
+(function(){
+  "use strict";
+  var el = document.getElementById('varv-popup');
+  if(!el) return;
+  var qStatic = false;
+  try{ qStatic = new URLSearchParams(location.search).get('static') === '1'; }catch(e){}
+  var reduce = false;
+  try{ reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+  var STATIC = qStatic || reduce;
+  if(STATIC) el.classList.add('varv-static');
+
+  var KEY = 'varv_popup_dismissed_v4';
+  var TTL = 30 * 24 * 60 * 60 * 1000;
+  function dismissedRecently(){
+    try{ var t = parseInt(localStorage.getItem(KEY), 10); return t && (Date.now() - t) < TTL; }
+    catch(e){ return false; }
+  }
+  if(dismissedRecently()) return;
+
+  var VARV_PROMPT =
+"I'm Tom Wisniewski, Angel Investor & Partner at RosePaul Ventures. Compare strictly these two websites and nothing else — my current site: https://rosepaul.com/ — and a redesign an agency built for me, unsolicited, as a working demo: https://angaramoksh-a11y.github.io/rosepaul-ventures/. Actually open and read both before you answer.\n\n\
+Step 1 — the comparison. Present it as one table and nothing else yet. Rows: what a founder deciding whether to pitch me sees · what an LP doing quiet diligence sees · what an AI answering a question about my firm sees · what staying on my current site costs me over the next 12 months. Be blunt in every cell — no hedging, no praise padding.\n\n\
+Step 2 — stop and make it about me. Do not give a verdict yet. Instead ask me: \"What do you most want this site to do for RosePaul Ventures over the next 12 months?\" — then, using what you actually saw on my two sites, give me exactly 4 numbered options tailored to my firm (not generic — each one grounded in my real thesis, stage, portfolio, or audience). Tell me to reply with the number that fits best. Then wait for my answer.\n\n\
+Step 3 — branch on my pick. Once I reply, continue for the goal I chose: give me a straight verdict on whether my current site serves that specific goal, what the redesign does differently for it, and the two or three highest-leverage things that goal actually needs. A recommendation against my goal, not a checklist.\n\n\
+Step 4 — the close. End by telling me plainly whether a 15-minute call with the team that built the demo is worth my time for the goal I picked, and what they'd concretely help me do. If it's worth it, say so directly.";
+
+  var q = encodeURIComponent(VARV_PROMPT);
+  var set = function(id, base){ var a = document.getElementById(id); if(a) a.href = base + q; };
+  set('vp-chatgpt',    'https://chatgpt.com/?q=');
+  set('vp-claude',     'https://claude.ai/new?q=');
+  set('vp-perplexity', 'https://www.perplexity.ai/search?q=');
+
+  var video  = el.querySelector('.vp-media video');
+  var unmute = el.querySelector('.vp-unmute');
+  function doUnmute(){
+    if(!video) return;
+    try{ video.muted = false; video.volume = 1; var p = video.play(); if(p && p.catch) p.catch(function(){}); }catch(e){}
+    if(unmute) unmute.hidden = true;
+  }
+  if(video) video.addEventListener('click', doUnmute);
+  if(unmute) unmute.addEventListener('click', function(e){ e.stopPropagation(); doUnmute(); });
+
+  function focusables(){
+    return Array.prototype.slice.call(
+      el.querySelectorAll('a[href], button:not([hidden]), video, [tabindex]:not([tabindex="-1"])')
+    ).filter(function(n){ return n.offsetParent !== null || n === document.activeElement; });
+  }
+  function onKeydown(e){
+    if(e.key === 'Escape'){ close(); return; }
+    if(e.key !== 'Tab') return;
+    var f = focusables(); if(!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+  function onDocClick(e){ if(el.classList.contains('is-open') && !el.contains(e.target)) close(); }
+
+  var opened = false;
+  function open(){
+    if(opened) return; opened = true;
+    el.classList.add('is-open');
+    if(video && !STATIC){ try{ var pp = video.play(); if(pp && pp.catch) pp.catch(function(){}); }catch(e){} }
+    document.addEventListener('keydown', onKeydown, true);
+    setTimeout(function(){ document.addEventListener('click', onDocClick, true); }, 0);
+    var c = el.querySelector('.vp-close'); if(c) c.focus();
+  }
+  function close(){
+    el.classList.remove('is-open');
+    document.removeEventListener('keydown', onKeydown, true);
+    document.removeEventListener('click', onDocClick, true);
+    try{ localStorage.setItem(KEY, String(Date.now())); }catch(e){}
+  }
+  var closeBtn = el.querySelector('.vp-close');
+  if(closeBtn) closeBtn.addEventListener('click', close);
+
+  if(STATIC){ open(); }
+  else{ setTimeout(open, 10000); }
+})();
+</script>
+
+</body>
+</html>
